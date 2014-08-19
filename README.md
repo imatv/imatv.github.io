@@ -1,4 +1,6 @@
-alvinvuong.com
+Personal Website
 =====================
 
-Personal Website (A work in progress)
+A work in progress...
+
+It can be viewed [here](www.alvinvuong.com).
