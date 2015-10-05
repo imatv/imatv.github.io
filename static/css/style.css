@@ -1,62 +1,98 @@
+/*******************************************************/
+/**
+ * Text
+ */
+
 body {
-  text-align: center;
-  font-family: Arial;
-  background-color: black;
-  background-image: url("../images/greybg.jpg");
-  background-repeat: repeat-x;
-  background-position: center top;
+    text-align: center;
+    font-family: Arial;
+    background-color: black;
+    background-image: url("../images/greybg.jpg");
+    background-repeat: repeat-x;
+    background-position: center top;
+}
+
+strong {
+    font-size: 24px;
+}
+
+h1 {
+    color:#ccc;
+}
+
+p {
+    color:#ccc;
+    font-size:18px;
+    margin-top:0;
+    padding:0;
+}
+
+p.name {
+    font-size: 20px;
+}
+
+p.description {
+    
+}
+
+p.copyright {
+    color: #FAE84C;
+    font-size: 12px;
 }
 
 section.top-left {
-  text-align: left;
-  width: 100px;
-}
-
-img.site-logo {
-  width: 100px;
-}
-
-img.mainSelf {
-  width: 150px;
-  border-radius: 30px;
-}
-
-img.mainIcons {
-  width: 80px;
+    text-align: left;
+    width: 100px;
 }
 
 /*******************************************************/
+/**
+ * Images
+ */
 
+img.site-logo {
+    width: 100px;
+}
+
+img.mainSelf {
+    width: 150px;
+    border-radius: 30px;
+}
+
+img.mainIcons {
+    width: 80px;
+}
+
+/*******************************************************/
 /**
  * Links
  */
 
 /* unvisited link */
 a:link {
-    color: #8FA2BB;
+    color: #83A6CE;
     text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: #8FA2BB;
+    color: #83A6CE;
     text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-    color: #8FA2BB;
+    color: #83A6CE;
     text-decoration: underline;
 }
 
 /* selected link */
 a:active {
-    color: #8FA2BB;
+    color: #83A6CE;
     text-decoration: underline;
 }
 
 /*******************************************************/
-
 /**
  * SECTIONS
  */
@@ -68,16 +104,5 @@ a:active {
 .section .empty i.fa-dribbble { color:#EA4C89; }
 .section .empty i.fa-tag { color:#8ABA56; }
 .section .empty em { font-size:14px; display:block; font-style:normal; color:#aaa; }
-
-/*******************************************************/
-
-h1 { color:#ccc; }
-p { color:#ccc; font-size:18px; margin-bottom:1.5em; margin-top:0; padding:0; }
-
-/**
- * Footer
- */
-
-#footer { background-image: url("../images/greybg.jpg"); }
 
 /*******************************************************/
