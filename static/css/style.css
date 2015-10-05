@@ -7,6 +7,15 @@ body {
   background-position: center top;
 }
 
+section.top-left {
+  text-align: left;
+  width: 100px;
+}
+
+img.site-logo {
+  width: 100px;
+}
+
 img.mainSelf {
   width: 150px;
   border-radius: 30px;
@@ -14,6 +23,36 @@ img.mainSelf {
 
 img.mainIcons {
   width: 80px;
+}
+
+/*******************************************************/
+
+/**
+ * Links
+ */
+
+/* unvisited link */
+a:link {
+    color: #8FA2BB;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #8FA2BB;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #8FA2BB;
+    text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: #8FA2BB;
+    text-decoration: underline;
 }
 
 /*******************************************************/
@@ -32,6 +71,7 @@ img.mainIcons {
 
 /*******************************************************/
 
+h1 { color:#ccc; }
 p { color:#ccc; font-size:18px; margin-bottom:1.5em; margin-top:0; padding:0; }
 
 /**
