@@ -2,7 +2,7 @@
 /**
  * Text
  */
-
+ 
 body {
     text-align: center;
     font-family: Arial;
@@ -10,6 +10,94 @@ body {
     background-image: url("../images/greybg.jpg");
     background-repeat: repeat-x;
     background-position: center top;
+    background-attachment: fixed;
+}
+
+body.pages {
+    background-repeat: repeat;
+}
+
+#wrapper {
+    width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    color: #ccc;
+    font-family: Arial;
+}
+
+#wrapper2 {
+    width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    color: #ccc;
+    font-family: Arial;
+}
+
+#wrapper2-5 {
+    width: 450px;
+    margin: 0 auto;
+    text-align: left;
+    color: #ccc;
+    font-family: Arial;
+}
+
+#wrapper3 {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    color: #ccc;
+    font-family: Arial;
+}
+
+#wrapper4 {
+    width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    color: #ccc;
+    font-family: Arial;
+}
+
+#border {
+    border-top-style: solid;
+    width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    color: #ccc;
+    font-family: Arial;
+}
+
+#icons {
+    width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    color: #ccc;
+    font-family: Arial;
+}
+
+#nav {
+    
+}
+
+#navbar-left {
+    width: 100px;
+    text-align: left;
+    float: left;
+    position: fixed;
+}
+
+#navbar-right {
+    width: 400px;
+    text-align: right;
+    float: right;
+}
+
+#photoCredit {
+    font-size: 12px;
+    color: #3F4052;
+}
+
+#footer {
+    text-align: center;
 }
 
 strong {
@@ -17,14 +105,18 @@ strong {
 }
 
 h1 {
-    color:#ccc;
+    color: #ccc;
+}
+
+h2 {
+    color: #ccc;
 }
 
 p {
-    color:#ccc;
-    font-size:18px;
-    margin-top:0;
-    padding:0;
+    color: #ccc;
+    font-size: 18px;
+    margin-top: 0;
+    padding: 0;
 }
 
 p.name {
@@ -38,12 +130,17 @@ p.description {
 p.copyright {
     color: #FAE84C;
     font-size: 12px;
+    text-align: center;
 }
 
 section.top-left {
     text-align: left;
-    width: 100px;
 }
+
+li.smaller {
+    font-size: 14px;
+}
+
 
 /*******************************************************/
 /**
@@ -51,7 +148,11 @@ section.top-left {
  */
 
 img.site-logo {
-    width: 120px;
+    width: 150px;
+}
+
+img.site-logo-notmain {
+    width: 80px
 }
 
 img.mainSelf {
@@ -61,6 +162,35 @@ img.mainSelf {
 
 img.mainIcons {
     width: 80px;
+}
+
+img.mainIcons-navbar {
+    width: 50px;
+}
+
+img.mainIconsHeader {
+    width: 150px;
+}
+
+img.rissmanLabLogo {
+    width: 200px;
+}
+
+img.hackingicons {
+    width: 140px;
+    background-color: white
+}
+
+img.archeryWest2015 {
+    width: 900px;
+}
+
+img.footer-icons {
+    width: 20px;
+}
+
+img.steamprofileicon {
+    width: 150px;
 }
 
 /*******************************************************/
@@ -91,18 +221,5 @@ a:active {
     color: #83A6CE;
     text-decoration: underline;
 }
-
-/*******************************************************/
-/**
- * SECTIONS
- */
-
-.section { padding:75px 5% 55px; text-align:center; overflow:hidden; }
-.section h3 { font-size:30px; color:#4b514b; margin-bottom:.9em; font-weight:normal; padding:0 5%; }
-.section .empty { font-size:20px; color:#666; }
-.section .empty i { font-size:35px; margin-right:5px; vertical-align:sub; }
-.section .empty i.fa-dribbble { color:#EA4C89; }
-.section .empty i.fa-tag { color:#8ABA56; }
-.section .empty em { font-size:14px; display:block; font-style:normal; color:#aaa; }
 
 /*******************************************************/

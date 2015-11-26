@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Alvin Vuong
+        </title>
+        <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+		<meta charset="UTF-8" />
+        
+        <!--
+            TODO: Fix this script to not break when resizing browser window.
+                  For scrolling navbar.
+        -->
+        
+        <!-- Include jQuery -->
+        <!--
+        <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+        
+        <script type='text/javascript'>
+        //<![CDATA[ 
+
+        $(function() {
+            // Stick the #nav to the top of the window
+            var nav = $('#nav');
+            var navHomeY = nav.offset().top;
+            var isFixed = false;
+            var $w = $(window);
+            $w.scroll(function() {
+                var scrollTop = $w.scrollTop();
+                var shouldBeFixed = scrollTop > navHomeY;
+                if (shouldBeFixed && !isFixed) {
+                    nav.css({
+                        position: 'fixed',
+                        top: 0,
+                        left: nav.offset().left,
+                        width: nav.width()
+                    });
+                    isFixed = true;
+                }
+                else if (!shouldBeFixed && isFixed)
+                {
+                    nav.css({
+                        position: 'static'
+                    });
+                    isFixed = false;
+                }
+            });
+        });
+
+        //]]>  
+        </script>
+        
+        -->
+        
+    </head>
+    
+    <div id="nav">
+        <div id="navbar-left">
+            <a href="index.html"><img class="site-logo-notmain" src="static/images/site-logo.png" alt="Site Logo"></a>
+            <br>
+        </div>
+        <div id="navbar-right">
+            <br>
+            <img class="mainIcons-navbar" src="static/images/icons/keyboardColored.svg" alt="Keyboard Icon">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="research.html">
+                <img class="mainIcons-navbar" src="static/images/icons/brain.svg" alt="Brain Icon">
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="archery.html">
+                <img class="mainIcons-navbar" src="static/images/icons/archery.svg" alt="Archery Icon">
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="gaming.html">
+                <img class="mainIcons-navbar" src="static/images/icons/xhair.svg" alt="Crosshair Icon">
+            </a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+    <br><br><br><br><br><br>
+    <header>
+        <img class="hackingicons" src="static/images/hacking/calhacks2.0.png" alt="Calhacks 2.0 Logo">
+        <img class="hackingicons" src="static/images/hacking/flir.jpg" alt="FLIR Logo">
+        <img class="hackingicons" src="static/images/hacking/sbhacks.png" alt="SBHacks Logo">
+        <br>
+        <img class="hackingicons" src="static/images/hacking/calhacks1.0.png" alt="Calhacks Logo">
+        <img class="hackingicons" src="static/images/hacking/alphagamejam.png" alt="Alpha Game Jam Logo">
+        <img class="hackingicons" src="static/images/hacking/herohacks.jpg" alt="HeroHacks Logo">
+        <img class="hackingicons" src="static/images/hacking/angelhack.jpg" alt="Angelhack Logo">
+    </header>
+    
+    <body class="pages">
+        <br>
+            
+        <p> Hackathon Projects </p>
+
+        <div id="wrapper2">
+            &nbsp;&nbsp;&nbsp;&nbsp;I've been to 7 hackathons (and counting!)
+            Each one has proven to me that my team and I have the ability to create awesome things.
+            We've made: <br>
+            <ul>
+                <li> <a href="http://devpost.com/software/m-o-l-m" target="_blank"> a walking implementation for virtual reality</a>
+                <li> <a href="http://devpost.com/software/object-rect" target="_blank"> an automated thermal cameraman</a>
+                <li> <a href="http://devpost.com/software/playlist2000" target="_blank"> a voice-controlled music queuer</a>
+                <li> <a href="http://devpost.com/software/emocar" target="_blank">a mind-controlled car</a>
+                <li> <a href="http://devpost.com/software/hartbeat" target="_blank">a heart rate-based first-person shooter</a>
+                <li> <a href="http://devpost.com/software/findar" target="_blank">an augmented reality search application</a>
+                <li> <a href="http://devpost.com/software/triplexarchery" target="_blank">an archery scoring app</a>
+            </ul>
+            <!--
+                TODO: Specific webpages for each hackathon & its corresponding project.
+                      Blog-like posts w/ pictures and experience.
+            -->
+            All of these projects can be found on my <a href="http://devpost.com/AlvinVuong" target="_blank">Devpost</a>, and <br>
+            most of the code can be viewed on my <a href="https://github.com/Alvin-Vuong" target="_blank">Github</a>.
+            
+        </div>
+        
+        <br><br>
+        
+        <div id="border">
+        </div>
+        
+        <br><br>
+        <p> Class Projects </p>
+        
+        <div id="wrapper4">
+            On top of hackathon projects, I also have worked on many interesting projects in my classes as well:
+            <br>
+            <ul>
+                <li> CS 188: Advanced Game Development for Virtual Reality (Blueprint, C++)
+                    <ul>
+                        <li class="smaller"> VR stealth/puzzle game prototype with Leap Motion and Oculus Rift using Unreal Engine 4
+                    </ul><br>
+                <li> CS 161: Fundamentals of Artificial Intelligence (Lisp)
+                    <ul>
+                        <li class="smaller"> N-Queens solver
+                        <li class="smaller"> Sokoban solver
+                    </ul><br>
+                <li> CS 111: Operating Systems (C)
+                    <ul>
+                        <li class="smaller"> peer-to-peer network client and server attack & defense
+                        <li class="smaller"> Linux file system driver
+                        <li class="smaller"> ramdisk Linux kernel module
+                        <li class="smaller"> parallelized shell prototype
+                    </ul><br>
+                <li> CS 131: Programming Languages (OCaml, Prolog, Java, Scheme, Python)
+                    <ul>
+                        <li class="smaller"> containerization of Twisted Places proxy herd using <a href="https://www.docker.com/" target="_blank"> Docker</a>
+                        <li class="smaller"> prototype of an asynchronous server herd for the Google Places API using <a href="https://en.wikipedia.org/wiki/Twisted_(software)" target="_blank"> Twisted</a>
+                        <li class="smaller"> matcher for DNA patterns in Scheme
+                        <li class="smaller"> benchmarking different implementations of Java parallelization models
+                        <li class="smaller"> KenKen solver in Prolog
+                        <li class="smaller"> manipulating context-free grammars in OCaml
+                    </ul><br>
+                <li> CS 35L: Software Construction Laboratory (Shell, Bash, C, Python)
+                    <ul>
+                        <li class="smaller"> <a href="https://docs.google.com/presentation/d/1BTafHLHeoFDbjP7u4hiZsu-oXEM054IgOUfszMBwvi0/edit?usp=sharing" target="_blank">presentation about brain-computer interfaces </a>
+                        <li class="smaller"> benchmarking multithreaded programs
+                        <li class="smaller"> crashing a server using buffer overrun exploit
+                        <li class="smaller"> using system calls
+                        <li class="smaller"> simple key cryptography
+                        <li class="smaller"> using the GNU debugger
+                        <li class="smaller"> using Git as a version control system
+                        <li class="smaller"> simple Python scripting
+                        <li class="smaller"> shell/bash scripting & using regular expressions
+                        <li class="smaller"> familiarization with the Linux command-line environment
+                    </ul><br>
+                <li> CS 33: Intro to Computer Organization (C)
+                    <ul>
+                        <li class="smaller"> using <a href="http://openmp.org/wp/" target="_blank"> OpenMP</a> to optimize and parallelize code
+                        <li class="smaller"> exploiting a program using buffer overflow
+                        <li class="smaller"> using GDB and objdump to "defuse binary bombs"
+                        <li class="smaller"> manipulating bit-level representations of integers
+                    </ul><br>
+                <li> CS 32: Intro to Computer Science 2 (C++)
+                    <ul>
+                        <li class="smaller"> database using multiple-key maps implemented with a binary search tree
+                        <li class="smaller"> implementation of a bomberman-style game
+                    </ul><br>
+                <li> CS 31: Intro to Computer Science 1 (C++)
+                    <ul>
+                        <li class="smaller"> simple ASCII "zombie extermination" game
+                        <li class="smaller"> basic word deduction game
+                        <li class="smaller"> rudimentary spam checker
+                    </ul>
+            </ul>
+            <br>
+        </div>
+        
+        <br><br>
+    </body>
+    
+    
+    <div id="footer">
+        <a href="https://www.facebook.com/im4tv" target="_blank">
+            <img class="footer-icons" src="static/images/icons/fb.svg" alt="Facebook Icon">
+        </a>
+        <a href="https://www.linkedin.com/in/imatv" target="_blank">
+            <img class="footer-icons" src="static/images/icons/linkedin.svg" alt="LinkedIn Icon">
+        </a>
+        <a href="tel:925-470-7297">
+            <img class="footer-icons" src="static/images/icons/smartphone.svg" alt="Phone Icon">
+        </a>
+        <a href="mailto:alvin.t.vuong@ucla.edu">
+            <img class="footer-icons" src="static/images/icons/email.svg" alt="Mail Icon">
+        </a>
+        <a href="static/files/AlvinVuong-CS-CV.pdf" target="_blank">
+            <img class="footer-icons" src="static/images/icons/cv.svg" alt="CV Icon">
+        </a>
+    </div>
+    <p class="copyright">&copy; 2015 Alvin Vuong &nbsp;</p>
+    
+<!--    
+    <div>Icons made by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>, <a href="http://www.flaticon.com/authors/anas-ramadan" title="Anas Ramadan">Anas Ramadan</a>, <a href="http://www.flaticon.com/authors/simpleicon" title="SimpleIcon">SimpleIcon</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+-->
+
+</html>
