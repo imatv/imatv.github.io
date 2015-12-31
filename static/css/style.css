@@ -193,6 +193,10 @@ img.steamprofileicon {
     width: 150px;
 }
 
+img.profile-icon {
+    width: 45px;
+}
+
 /*******************************************************/
 /**
  * Links
