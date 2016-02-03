@@ -57,6 +57,22 @@ body.pages {
     font-family: Arial;
 }
 
+#wrapper5 {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ccc;
+    font-family: Arial;
+}
+
+#wrapper6 {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    color: #ccc;
+    font-family: Arial;
+}
+
 #border {
     border-top-style: solid;
     width: 600px;
@@ -69,7 +85,15 @@ body.pages {
 #icons {
     width: 600px;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
+    color: #ccc;
+    font-family: Arial;
+}
+
+#iconlabels {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
     color: #ccc;
     font-family: Arial;
 }
