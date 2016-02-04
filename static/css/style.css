@@ -281,10 +281,6 @@ a:active {
         color: #ccc;
         font-family: Arial;
     }
-    
-    li.smaller {
-        font-size: 20px;
-    }
 }
 
 /* Smartphones (portrait and landscape) */
@@ -311,10 +307,6 @@ a:active {
         text-align: left;
         color: #ccc;
         font-family: Arial;
-    }
-    
-    li.smaller {
-        font-size: 20px;
     }
 }
 
@@ -343,10 +335,6 @@ a:active {
         color: #ccc;
         font-family: Arial;
     }
-    
-    li.smaller {
-        font-size: 20px;
-    }
 }
 
 /* Smartphones (portrait) */
@@ -373,10 +361,6 @@ a:active {
         text-align: left;
         color: #ccc;
         font-family: Arial;
-    }
-    
-    li.smaller {
-        font-size: 20px;
     }
 }
 
@@ -405,10 +389,6 @@ a:active {
         color: #ccc;
         font-family: Arial;
     }
-    
-    li.smaller {
-        font-size: 20px;
-    }
 }
 
 /* iPads (landscape) */
@@ -435,10 +415,6 @@ a:active {
         text-align: left;
         color: #ccc;
         font-family: Arial;
-    }
-    
-    li.smaller {
-        font-size: 20px;
     }
 }
 
@@ -467,10 +443,6 @@ a:active {
         color: #ccc;
         font-family: Arial;
     }
-    
-    li.smaller {
-        font-size: 20px;
-    }
 }
 
 /* Desktops and laptops */
@@ -498,10 +470,6 @@ a:active {
         color: #ccc;
         font-family: Arial;
     }
-    
-    li.smaller {
-        font-size: 20px;
-    }
 }
 
 /* Large screens */
@@ -528,10 +496,6 @@ a:active {
         text-align: left;
         color: #ccc;
         font-family: Arial;
-    }
-    
-    li.smaller {
-        font-size: 20px;
     }
 }
 
@@ -586,10 +550,6 @@ a:active {
         color: #ccc;
         font-family: Arial;
     }
-    
-    li.smaller {
-        font-size: 20px;
-    }
 }
 
 /*iPhone 6 landscape*/
@@ -615,10 +575,6 @@ a:active {
         text-align: left;
         color: #ccc;
         font-family: Arial;
-    }
-    
-    li.smaller {
-        font-size: 20px;
     }
 }
 
@@ -646,10 +602,6 @@ a:active {
         color: #ccc;
         font-family: Arial;
     }
-    
-    li.smaller {
-        font-size: 20px;
-    }
 }
 
 /*iPhone 6+ landscape*/
@@ -675,10 +627,6 @@ a:active {
         text-align: left;
         color: #ccc;
         font-family: Arial;
-    }
-    
-    li.smaller {
-        font-size: 20px;
     }
 }
 
@@ -706,10 +654,6 @@ a:active {
         color: #ccc;
         font-family: Arial;
     }
-    
-    li.smaller {
-        font-size: 20px;
-    }
 }
 
 /*iPhone 6 and iPhone 6+ portrait*/
@@ -736,10 +680,6 @@ a:active {
         color: #ccc;
         font-family: Arial;
     }
-    
-    li.smaller {
-        font-size: 20px;
-    }
 }
 
 /*iPhone 6 and iPhone 6+ landscape*/
@@ -765,9 +705,5 @@ a:active {
         text-align: left;
         color: #ccc;
         font-family: Arial;
-    }
-    
-    li.smaller {
-        font-size: 20px;
     }
 }
