@@ -2,7 +2,12 @@
 /**
  * Text
  */
- 
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
 body {
     text-align: center;
     font-family: Arial;
@@ -11,6 +16,7 @@ body {
     background-repeat: repeat-x;
     background-position: center top;
     background-attachment: fixed;
+    background-size: cover;
 }
 
 body.pages {
@@ -58,7 +64,7 @@ body.pages {
 }
 
 #wrapper5 {
-    width: 600px;
+    width: 500px;
     margin: 0 auto;
     text-align: center;
     color: #ccc;
@@ -83,7 +89,7 @@ body.pages {
 }
 
 #icons {
-    width: 1000px;
+    width: 500px;
     margin: 0 auto;
     text-align: center;
     color: #ccc;
