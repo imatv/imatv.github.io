@@ -253,36 +253,6 @@ a:active {
 
 /*******************************************************/
 
-/* For mobile phones: */
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: 
-    [class*="col-"] {
-        width: 100%;
-    }*/
-    #icons {
-        width: 800px;
-        margin: 0 auto;
-        text-align: center;
-        color: #ccc;
-        font-family: Arial;
-    }
-    
-    #wrapper5 {
-        width: 600px;
-        margin: 0 auto;
-        text-align: center;
-        color: #ccc;
-    }
-    
-    #wrapper3 {
-        width: 600px;
-        margin: 0 auto;
-        text-align: left;
-        color: #ccc;
-        font-family: Arial;
-    }
-}
-
 /* Smartphones (portrait and landscape) */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 /* Styles */
@@ -420,60 +390,6 @@ a:active {
 
 /* iPads (portrait) */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-/* Styles */
-    #icons {
-        width: 800px;
-        margin: 0 auto;
-        text-align: center;
-        color: #ccc;
-        font-family: Arial;
-    }
-    
-    #wrapper5 {
-        width: 600px;
-        margin: 0 auto;
-        text-align: center;
-        color: #ccc;
-    }
-    
-    #wrapper3 {
-        width: 600px;
-        margin: 0 auto;
-        text-align: left;
-        color: #ccc;
-        font-family: Arial;
-    }
-}
-
-/* Desktops and laptops */
-@media only screen and (min-width : 1224px) {
-/* Styles */
-    #icons {
-        width: 800px;
-        margin: 0 auto;
-        text-align: center;
-        color: #ccc;
-        font-family: Arial;
-    }
-    
-    #wrapper5 {
-        width: 600px;
-        margin: 0 auto;
-        text-align: center;
-        color: #ccc;
-    }
-    
-    #wrapper3 {
-        width: 600px;
-        margin: 0 auto;
-        text-align: left;
-        color: #ccc;
-        font-family: Arial;
-    }
-}
-
-/* Large screens */
-@media only screen and (min-width : 1824px) {
 /* Styles */
     #icons {
         width: 800px;
