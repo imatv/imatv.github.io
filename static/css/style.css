@@ -4,8 +4,25 @@
  */
 
 /* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
 }
 
 body {
