@@ -273,6 +273,14 @@ a:active {
         text-align: center;
         color: #ccc;
     }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
+    }
 }
 
 /* Smartphones (portrait and landscape) */
@@ -291,6 +299,14 @@ a:active {
         margin: 0 auto;
         text-align: center;
         color: #ccc;
+    }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
     }
 }
 
@@ -311,6 +327,14 @@ a:active {
         text-align: center;
         color: #ccc;
     }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
+    }
 }
 
 /* Smartphones (portrait) */
@@ -329,6 +353,14 @@ a:active {
         margin: 0 auto;
         text-align: center;
         color: #ccc;
+    }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
     }
 }
 
@@ -349,6 +381,14 @@ a:active {
         text-align: center;
         color: #ccc;
     }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
+    }
 }
 
 /* iPads (landscape) */
@@ -367,6 +407,14 @@ a:active {
         margin: 0 auto;
         text-align: center;
         color: #ccc;
+    }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
     }
 }
 
@@ -387,6 +435,14 @@ a:active {
         text-align: center;
         color: #ccc;
     }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
+    }
 }
 
 /* Desktops and laptops */
@@ -405,6 +461,14 @@ a:active {
         margin: 0 auto;
         text-align: center;
         color: #ccc;
+    }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
     }
 }
 
@@ -425,6 +489,14 @@ a:active {
         text-align: center;
         color: #ccc;
     }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
+    }
 }
 
 /* iPhone 4. Comma can be used to apply same rules to multiple media queries. */
@@ -444,6 +516,14 @@ a:active {
         text-align: center;
         color: #ccc;
     }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
+    }
 }
 
 /*iPhone 6 Portrait*/
@@ -461,6 +541,14 @@ a:active {
         margin: 0 auto;
         text-align: center;
         color: #ccc;
+    }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
     }
 }
 
@@ -480,6 +568,14 @@ a:active {
         text-align: center;
         color: #ccc;
     }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
+    }
 }
 
 /*iPhone 6+ Portrait*/
@@ -497,6 +593,14 @@ a:active {
         margin: 0 auto;
         text-align: center;
         color: #ccc;
+    }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
     }
 }
 
@@ -516,6 +620,14 @@ a:active {
         text-align: center;
         color: #ccc;
     }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
+    }
 }
 
 /*iPhone 6 and iPhone 6+ portrait and landscape*/
@@ -533,6 +645,14 @@ a:active {
         margin: 0 auto;
         text-align: center;
         color: #ccc;
+    }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
     }
 }
 
@@ -552,6 +672,14 @@ a:active {
         text-align: center;
         color: #ccc;
     }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
+    }
 }
 
 /*iPhone 6 and iPhone 6+ landscape*/
@@ -569,5 +697,13 @@ a:active {
         margin: 0 auto;
         text-align: center;
         color: #ccc;
+    }
+    
+    #wrapper3 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: left;
+        color: #ccc;
+        font-family: Arial;
     }
 }
