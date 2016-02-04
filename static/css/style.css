@@ -3,28 +3,6 @@
  * Text
  */
 
-/* For mobile phones: */
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
-    #icons {
-        width: 1000px;
-        margin: 0 auto;
-        text-align: center;
-        color: #ccc;
-        font-family: Arial;
-    }
-    
-    #wrapper5 {
-        width: 600px;
-        margin: 0 auto;
-        text-align: center;
-        color: #ccc;
-    }
-}
-
 body {
     text-align: center;
     font-family: Arial;
@@ -274,3 +252,322 @@ a:active {
 }
 
 /*******************************************************/
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: 
+    [class*="col-"] {
+        width: 100%;
+    }*/
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+/* Smartphones (portrait and landscape) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* Styles */
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+/* Smartphones (landscape) */
+@media only screen and (min-width : 321px) {
+/* Styles */
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+/* Smartphones (portrait) */
+@media only screen and (max-width : 320px) {
+/* Styles */
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+/* iPads (portrait and landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+/* Styles */
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+/* iPads (landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* Styles */
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+/* iPads (portrait) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+/* Styles */
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+/* Desktops and laptops */
+@media only screen and (min-width : 1224px) {
+/* Styles */
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+/* Large screens */
+@media only screen and (min-width : 1824px) {
+/* Styles */
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+/* iPhone 4. Comma can be used to apply same rules to multiple media queries. */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+/*iPhone 6 Portrait*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) { 
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+/*iPhone 6 landscape*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) { 
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+/*iPhone 6+ Portrait*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) { 
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+/*iPhone 6+ landscape*/
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) { 
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+/*iPhone 6 and iPhone 6+ portrait and landscape*/
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px){ 
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+/*iPhone 6 and iPhone 6+ portrait*/
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) and (orientation : portrait){ 
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
+
+/*iPhone 6 and iPhone 6+ landscape*/
+@media only screen and (max-device-width: 640px), only screen and (max-device-width: 667px), only screen and (max-width: 480px) and (orientation : landscape){ 
+    #icons {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+        font-family: Arial;
+    }
+    
+    #wrapper5 {
+        width: 600px;
+        margin: 0 auto;
+        text-align: center;
+        color: #ccc;
+    }
+}
