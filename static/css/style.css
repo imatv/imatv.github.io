@@ -74,6 +74,14 @@ body.pages {
     font-family: Arial;
 }
 
+#wrapper7 {
+    width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    color: #ccc;
+    font-family: Arial;
+}
+
 #border {
     border-top-style: solid;
     width: 600px;
