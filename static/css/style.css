@@ -18,6 +18,14 @@ body.pages {
     background-repeat: repeat;
 }
 
+#omg {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ccc;
+    font-family: Arial;
+}
+
 #wrapper {
     width: 600px;
     margin: 0 auto;
