@@ -117,13 +117,13 @@
                             Space complexity is based on the temporary storage required by the algorithm (this doesn't include the input read matrix).
                             <br class="smaller">
                         <li class="smaller">
-                            Let the number of haplotypes be n.
+                            Let the number of SNPs/sites (length of each sequence) be N.
                             <br class="smaller">
                         <li class="smaller">
-                            Let the number of sites (length of each sequence) be m.
+                            Let the number of reads be R.
                             <br class="smaller">
                         <li class="smaller">
-                            Let the number of reads be r.
+                            Let the number of haplotypes be H.
                             <br class="smaller">
                     </ul>
                 
@@ -135,15 +135,15 @@
                             <br class="smaller">
                             <ul>
                                 <li class="smaller">
-                                    Assume all reads are correct (no errors). Iterate through all 
+                                    Assume all reads are correct (no errors) and only two haplotypes (H = 2). Iterate through all 
                                     possible haplotype combinations, and verify with all reads to 
                                     check if it's a solution.
                                     <br class="smaller">
                                 <li class="smaller">
-                                    Time Complexity: O(r * n<sup>m</sup>)
+                                    Time Complexity: &lt; R * 2<sup>N</sup> = O(2<sup>N</sup>)
                                     <br class="smaller">
                                 <li class="smaller">
-                                    Space Complexity: O(m)
+                                    Space Complexity: = 2 * N = O(N)
                                     <br class="smaller">
                                 <li class="smaller">
                                     Problem(s): 
@@ -163,16 +163,16 @@
                             <br class="smaller">
                             <ul>
                                 <li class="smaller">
-                                    Allow for read errors. Iterate through all possible haplotype 
+                                    Allow for read errors and assume only two haplotypes (H = 2). Iterate through all possible haplotype 
                                     combinations, and count how many read errors each one would have. 
                                     Store each combination's read errors in an array. Choose the 
                                     combination that would produce the least number of errors.
                                     <br class="smaller">
                                 <li class="smaller">
-                                    Time Complexity: O(r * n<sup>m</sup>)
+                                    Time Complexity: = R * 2<sup>N</sup> = O(2<sup>N</sup>)
                                     <br class="smaller">
                                 <li class="smaller">
-                                    Space Complexity: O(n<sup>m</sup>)
+                                    Space Complexity: = O(2<sup>N</sup>)
                                     <br class="smaller">
                                 <li class="smaller">
                                     Problem(s): 
@@ -195,15 +195,15 @@
                             <br class="smaller">
                             <ul>
                                 <li class="smaller">
-                                    Assume all reads are correct (no errors). For each SNP of the haplotype sequence, copy the read until end of read is found '-', save that index. 
+                                    Assume all reads are correct (no errors) and only two haplotypes (H = 2). For each SNP of the haplotype sequence, copy the read until end of read is found '-', save that index. 
                                     Move to next read with non-hyphen at that index. Check which haplotype this read belongs to by examining a previous SNP. 
                                     Continue copying the read until end, and save index again. Repeat until end of the sequence.
                                     <br class="smaller">
                                 <li class="smaller">
-                                    Time Complexity: O(r + m)
+                                    Time Complexity: = R + N = O(N), assuming N >> R
                                     <br class="smaller">
                                 <li class="smaller">
-                                    Space Complexity: O(m)
+                                    Space Complexity: = 2 * N = O(N)
                                     <br class="smaller">
                                 <li class="smaller">
                                     Problem(s): 
@@ -221,14 +221,14 @@
                             <br class="smaller">
                             <ul>
                                 <li class="smaller">
-                                    Allow for read errors. Examine coinciding SNP regions for a local 
+                                    Allow for read errors and assume only two haplotypes (H = 2). Examine coinciding SNP regions for a local 
                                     solution that minimizes local errors. Repeat until entire sequence is generated.
                                     <br class="smaller">
                                 <li class="smaller">
-                                    Time Complexity: O(r + m)
+                                    Time Complexity: &lt; R + N = O(N), assuming N >> R
                                     <br class="smaller">
                                 <li class="smaller">
-                                    Space Complexity: O(m)
+                                    Space Complexity: &lt; (2 * N) + R = O(N), assuming N >> R
                                     <br class="smaller">
                                 <li class="smaller">
                                     Problem(s): 
