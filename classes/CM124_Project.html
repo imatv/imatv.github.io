@@ -49,11 +49,205 @@
         <p> CM 124: Computational Genetics (Spring 2016) <br> Final Project: Haplotype Assembly </p>
         
         <div id="wrapper4">
-            This course covers the design and analysis of genome wide association studies and computational methods for the 
-            analysis of next generation sequencing technologies. While those topics form the content of the course, the goal 
-            of the course is to provide training in interdisciplinary computational analysis. The goal is to learn how to 
-            identify computational problems in other fields and solve them to make a contribution without an extensive 
-            background in the field.
+            This course covers the computational methods for the analysis of genome wide association studies and next generation 
+            sequencing technologies. The goal of the course is to provide training in interdisciplinary computational analysis, 
+            to learn how to identify computational problems/solutions, and to make contributions in other fields without an 
+            extensive background.
+            <ul>
+                <li> The Computational Problem
+                <br class="smaller"><br class="smaller">
+                    <ul>
+                        <li class="smaller">
+                            Humans have 2 haplotypes; while sequencers produce reads that only contain regional info from one haplotype.
+                            <br class="smaller">
+                        <li class="smaller">
+                            We don't know which read is from which haplotype.
+                            <br class="smaller">
+                        <li class="smaller">
+                            But by aligning and using info from multiple reads, we can reassemble the haplotypes. (See header diagram).
+                            <br class="smaller">
+                        <li class="smaller">
+                            This is called the Haplotype Assembly Problem.
+                            <br class="smaller">
+                    </ul>
+                
+                <li> Input Format
+                <br class="smaller"><br class="smaller">
+                    <ul>
+                        <li class="smaller">
+                            A pair of haplotypes are represented as a pair of complementary binary strings.<br>
+                            Homozygous sites are not represented, and heterozygous sites are assigned 0/1 pairings.
+                            <br class="smaller">
+                            <img class="CM124Diagrams1" src="../static/images/classes/cm124/binaryString.png" alt="Binary String Diagram">
+                            <br class="smaller">
+                        <li class="smaller">
+                            Reads are thus also represented as binary strings.
+                            <br class="smaller">
+                        <li class="smaller">
+                            Multiple reads are then a set of binary strings, which can be represented as a binary read matrix.
+                            <br class="smaller">
+                            <img class="CM124Diagrams1" src="../static/images/classes/cm124/readMatrix.png" alt="Read Matrix Diagram">
+                            <br class="smaller">
+                        <li class="smaller">
+                            This read matrix can then be analyzed to determine haplotype pairs/sets.<br>
+                            <br class="smaller">
+                    </ul>
+                    
+                <li> Output Format
+                <br class="smaller"><br class="smaller">
+                    <ul>
+                        <li class="smaller">
+                            Output format will be the pair of complementary binary strings representing the haplotypes.
+                            Below is a possible solution to the above read matrix.
+                            <br class="smaller">
+                            <img class="CM124Diagrams1" src="../static/images/classes/cm124/possibleSolution.png" alt="Solution Diagram">
+                            <br class="smaller">
+                    </ul>
+                    
+                <li> Algorithm Benchmarks
+                <br class="smaller"><br class="smaller">
+                    <ul>
+                        <li class="smaller">
+                            In order to benchmark different algorithms, we can analyze each one's space and time complexities for solving the computational problem.
+                            <br class="smaller">
+                        <li class="smaller">
+                            Time complexity is based on the number of operations that the algorithm will end up performing.
+                            <br class="smaller">
+                        <li class="smaller">
+                            Space complexity is based on the temporary storage required by the algorithm (this doesn't include the input read matrix).
+                            <br class="smaller">
+                        <li class="smaller">
+                            Let the number of haplotypes be n.
+                            <br class="smaller">
+                        <li class="smaller">
+                            Let the number of sites (length of each sequence) be m.
+                            <br class="smaller">
+                        <li class="smaller">
+                            Let the number of reads be r.
+                            <br class="smaller">
+                    </ul>
+                
+                <li> Baseline Solution Algorithms
+                <br class="smaller"><br class="smaller">
+                    <ul>
+                        <li class="smaller">
+                            Trivial Guess-and-Check Algorithm (Easy Difficulty)
+                            <br class="smaller">
+                            <ul>
+                                <li class="smaller">
+                                    Assume all reads are correct (no errors). Iterate through all 
+                                    possible haplotype combinations, and verify with all reads to 
+                                    check if it's a solution.
+                                    <br class="smaller">
+                                <li class="smaller">
+                                    Time Complexity: O(r * n<sup>m</sup>)
+                                    <br class="smaller">
+                                <li class="smaller">
+                                    Space Complexity: O(m)
+                                    <br class="smaller">
+                                <li class="smaller">
+                                    Problem(s): 
+                                    <br class="smaller">
+                                    <ul>
+                                        <li class="smaller">
+                                            Extremely inefficient. Exponential time complexity.
+                                        <li class="smaller">
+                                            If there are any error reads, it might not solve.
+                                        <li class="smaller">
+                                            Doesn't account for other numbers of haplotypes.
+                                    </ul>
+                            </ul>
+                        <br class="smaller"><br class="smaller">
+                        <li class="smaller">
+                            Trivial Try-All-Choose-Best Algorithm (Medium Difficulty)<br>
+                            <br class="smaller">
+                            <ul>
+                                <li class="smaller">
+                                    Allow for read errors. Iterate through all possible haplotype 
+                                    combinations, and count how many read errors each one would have. 
+                                    Store each combination's read errors in an array. Choose the 
+                                    combination that would produce the least number of errors.
+                                    <br class="smaller">
+                                <li class="smaller">
+                                    Time Complexity: O(r * n<sup>m</sup>)
+                                    <br class="smaller">
+                                <li class="smaller">
+                                    Space Complexity: O(n<sup>m</sup>)
+                                    <br class="smaller">
+                                <li class="smaller">
+                                    Problem(s): 
+                                    <br class="smaller">
+                                    <ul>
+                                        <li class="smaller">
+                                            Extremely inefficient. Exponential time &amp; space complexities.
+                                        <li class="smaller">
+                                            Doesn't account for other numbers of haplotypes.
+                                    </ul>
+                            </ul>
+                        <br class="smaller"><br class="smaller">
+                    </ul>
+                    
+                <li> Improved Solution Algorithms
+                <br class="smaller"><br class="smaller">
+                    <ul>
+                        <li class="smaller">
+                            Greedy Algorithm (Easy Difficulty)<br>
+                            <br class="smaller">
+                            <ul>
+                                <li class="smaller">
+                                    Assume all reads are correct (no errors). For each SNP of the haplotype sequence, copy the read until end of read is found '-', save that index. 
+                                    Move to next read with non-hyphen at that index. Check which haplotype this read belongs to by examining a previous SNP. 
+                                    Continue copying the read until end, and save index again. Repeat until end of the sequence.
+                                    <br class="smaller">
+                                <li class="smaller">
+                                    Time Complexity: O(r + m)
+                                    <br class="smaller">
+                                <li class="smaller">
+                                    Space Complexity: O(m)
+                                    <br class="smaller">
+                                <li class="smaller">
+                                    Problem(s): 
+                                    <br class="smaller">
+                                    <ul>
+                                        <li class="smaller">
+                                            If there are any error reads, it might not solve.
+                                        <li class="smaller">
+                                            Doesn't account for other numbers of haplotypes.
+                                    </ul>
+                            </ul>
+                        <br class="smaller"><br class="smaller">
+                        <li class="smaller">
+                            Greedy Algorithm (Medium Difficulty)<br>
+                            <br class="smaller">
+                            <ul>
+                                <li class="smaller">
+                                    Allow for read errors. Examine coinciding SNP regions for a local 
+                                    solution that minimizes local errors. Repeat until entire sequence is generated.
+                                    <br class="smaller">
+                                <li class="smaller">
+                                    Time Complexity: O(r + m)
+                                    <br class="smaller">
+                                <li class="smaller">
+                                    Space Complexity: O(m)
+                                    <br class="smaller">
+                                <li class="smaller">
+                                    Problem(s): 
+                                    <br class="smaller">
+                                    <ul>
+                                        <li class="smaller">
+                                            Doesn't account for other numbers of haplotypes.
+                                    </ul>
+                            </ul>
+                        <br class="smaller"><br class="smaller">
+                    </ul>
+            </ul>
+            
+            <br>
+                
+            <div id="border">
+            </div>
+            
+            <br>
             
             <ul>
                 <li> Weekly Updates
@@ -66,13 +260,13 @@
                                 <li class="smaller">
                                     Progress: Project Decision and Website Wiki Setup
                                 <li class="smaller">
-                                    Next Week: Description of Computational Problem and Possible Solutions
+                                    Next Week: Description of Computational Problem
                                 <li class="smaller">
                                     Grade for this Week: A+
                                 <li class="smaller">
                                     Problems that came up: None
                                 <li class="smaller">
-                                    Problems solved: Getting a webpage wiki framework setup.
+                                    Problems solved: Getting a webpage wiki framework setup
                             </ul>
                         <br class="smaller"><br class="smaller">
                         <li class="smaller">
@@ -80,36 +274,70 @@
                             <br class="smaller">
                             <ul>
                                 <li class="smaller">
-                                    Progress: 
+                                    Progress: Description of Computational Problem
                                 <li class="smaller">
-                                    Next Week: 
+                                    Next Week: Definition of Inputs &amp; Output Benchmarks
                                 <li class="smaller">
-                                    Grade for this Week: 
+                                    Grade for this Week: A+
                                 <li class="smaller">
-                                    Problems that came up: 
+                                    Problems that came up: None
                                 <li class="smaller">
-                                    Problems solved: 
+                                    Problems solved: Outlining what Haplotype Assembly entails
+                            </ul>
+                        <br class="smaller"><br class="smaller">
+                        <li class="smaller">
+                            Week 9
+                            <br class="smaller">
+                            <ul>
+                                <li class="smaller">
+                                    Progress: Definition of Inputs &amp; Output Benchmarks
+                                <li class="smaller">
+                                    Next Week: Trivial/Improved Algorithm (Easy)
+                                <li class="smaller">
+                                    Grade for this Week: A+
+                                <li class="smaller">
+                                    Problems that came up: None
+                                <li class="smaller">
+                                    Problems solved: Input &amp; Output format description
+                            </ul>
+                        <br class="smaller"><br class="smaller">
+                        <li class="smaller">
+                            Week 10
+                            <br class="smaller">
+                            <ul>
+                                <li class="smaller">
+                                    Progress: Trivial/Improved Algorithms (Easy)
+                                <li class="smaller">
+                                    Next Week: Attempt to Allow for Read Errors (Medium)
+                                <li class="smaller">
+                                    Grade for this Week: A+
+                                <li class="smaller">
+                                    Problems that came up: None
+                                <li class="smaller">
+                                    Problems solved: Outlined and benchmarked algorithm solutions
+                            </ul>
+                        <br class="smaller"><br class="smaller">
+                        <li class="smaller">
+                            Week 11
+                            <br class="smaller">
+                            <ul>
+                                <li class="smaller">
+                                    Progress: Attempt to Allow for Read Errors (Medium)
+                                <li class="smaller">
+                                    Grade for this Week: A for Effort
+                                <li class="smaller">
+                                    Problems that came up: Medium was harder than originally thought. Outlined idea, but no implementation.
+                                <li class="smaller">
+                                    Problems solved: Presentation, Project Packaging, and Documentation
                             </ul>
                         <br class="smaller"><br class="smaller">
                     </ul>
-                <li> Computational Problem Description
-                <br class="smaller"><br class="smaller">
-                    <ul> 
-                        <li class="smaller">
-                            <em>Haplotype Assembly</em>
-                        <br class="smaller"><br class="smaller">
-                        <li class="smaller">
-                            Input Definition
-                        <br class="smaller"><br class="smaller">
-                        <li class="smaller">
-                            Output Definitons &amp; Benchmarks
-                            
-                    </ul>
+
             </ul>
             
         </div>
         
-        <br><br><br class="smaller">
+        <br><br>
         
     </body>
     

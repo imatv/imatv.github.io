@@ -229,7 +229,11 @@ img.rissmanLabLogo {
 }
 
 img.haplotypeDiagram {
-    width: 350px;
+    width: 800px;
+}
+
+img.CM124Diagrams1 {
+    width: 450px;
 }
 
 img.hackingicons {
